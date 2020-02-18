@@ -7,14 +7,17 @@ body
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    margin-bottom: 0px;
 }
     
+
 div
 {
     display:block;
     height:200px;
-    margin-left: 10px;
-    margin-right:10px;
+    position: sticky;
+    top: 100px;
+    z-index: 1;
 }
     
 .b1
@@ -23,11 +26,15 @@ div
     position: sticky;
     margin-top: 0;
     height: 100px;
-    margin-left: -10px;
     width: 100%;
-    padding-left: 10px;
     position: sticky;
     top: 0;
+    z-index: 10;
+}
+
+.bottom
+{
+    width: 20%;
 }
 
 .b2
@@ -39,38 +46,43 @@ div
 {
     background-color:blue;
     color:white;
-    position: sticky;
-    top: 100px;
+    margin-left: 20%;
+    height: 400px;
 }
 
 .b4
 {
     background-color:orange;
+     margin-left: 40%;
+    height: 800px;
 }
 
 .b5
 {
     background-color:purple;
     color:white;
+     margin-left: 60%;
+    height: 1600px;
 }
 
 .b6
 {
     background-color:darksalmon;
+     margin-left: 80%;
+    height:3200px;
 }
-
 
     
 </style>
 </head>
 <html>
 <body>
-    <div class = "b1">b1</div>
-    <div class = "b2">b2</div>
-    <div class = "b3">b3</div>
-    <div class = "b4">b4</div>
-    <div class = "b5">b5</div>
-    <div class = "b6">b6</div>
+    <div class = "b1"></div>
+    <div class = "b2 bottom"></div>
+    <div class = "b3 bottom"></div>
+    <div class = "b4 bottom"></div>
+    <div class = "b5 bottom"></div>
+    <div class = "b6 bottom"></div>
     
     
 </body>
